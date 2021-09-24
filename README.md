@@ -16,11 +16,7 @@ composer require emtiazzahid/ndjson
 ```php
 <?php
 
-$ndjson = <<<NDJSON
-{"foo":"bar"}
-{"hello":"world"}
-NDJSON;
-$decode = \Soldierm\Ndjson\Parser::decode($ndjson);
+$decode = \Soldierm\Ndjson\Parser::decode($your_file_path);
 ```
 
 ### Encode ndjson
