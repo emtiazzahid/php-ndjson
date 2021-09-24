@@ -14,7 +14,7 @@ final class Parser
     /**
      * ndjson
      *
-     * @param string $ndjson
+     * @param string $filename
      * @return array
      */
     public static function decode(string $filename): array

@@ -27,7 +27,7 @@ class ParserTest extends TestCase
         $encode = Parser::encode($array);
 
         $this->assertIsString($encode);
-        $this->assertContains('{"foo":"bar"}', $encode);
-        $this->assertContains('{"hello":"world"}', $encode);
+        $this->assertStringContainsString('{"foo":"bar"}', $encode);
+        $this->assertStringContainsString('{"hello":"world"}', $encode);
     }
 }

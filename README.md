@@ -16,7 +16,7 @@ composer require emtiazzahid/ndjson
 ```php
 <?php
 
-$decode = \Soldierm\Ndjson\Parser::decode($your_file_path);
+$decode = \EmtiazZahid\Ndjson\Parser::decode($your_file_path);
 ```
 
 ### Encode ndjson
@@ -27,7 +27,12 @@ $array = [
     ['foo' => 'bar'],
     ['hello' => 'world']
 ];
-$encode = \Soldierm\Ndjson\Parser::encode($array);
+$encode = \EmtiazZahid\Ndjson\Parser::encode($array);
+```
+
+### Run test
+```shell
+.\vendor\bin\phpunit test/ParserTest
 ```
 
 ## Show your support
